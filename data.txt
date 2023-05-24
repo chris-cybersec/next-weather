@@ -1,0 +1,3 @@
+
+
+https://geocoding-api.open-meteo.com/v1/search?name=${cityName}&count=10&language=en&format=json

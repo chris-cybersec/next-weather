@@ -1,0 +1,13 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+@use '_Gradients.module.scss' as *;
+
+.container{
+    @include gridCenter;
+    height: 100%;
+    background-color: $clr1;
+    color: $font-clr1;
+    p{
+        font-size: .8rem;
+    }
+}

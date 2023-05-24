@@ -1,0 +1,48 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+@use '_Gradients.module.scss' as *;
+
+.container{
+    @include flexColumn;
+    align-items: center;
+    width: 20rem;
+    padding:1rem;
+    color: $font-clr1;
+    border: 1px solid $font-clr1;
+    @include radius5;
+    @include FormGradient;
+    .mainInput{
+        margin-block-end: .5rem;
+        width: 80%;
+        @include flexRow;
+        padding-block: .5rem;
+    }
+}
+
+// ========================FormInput
+.formInput{
+    @include flexColumn;
+    width: 100%;
+    justify-content: space-between;
+    .inputContainer{
+        @include flexRow;
+        margin-block-end: 1rem;
+        .search{
+            @include gridCenter;
+            padding-inline: .5rem;
+            @include radius2;
+            background-color: $clr-alt;
+            @include transition1;
+            cursor: pointer;
+            &:hover{
+                background-color: $clr-hover-alt;
+            }
+        }
+    }
+}
+
+// ========================InputItem
+.InputItem{
+    border: 1px solid $font-clr1;
+    @include radius2;
+}

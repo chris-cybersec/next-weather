@@ -1,0 +1,16 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+@use '_Gradients.module.scss' as *;
+
+.container{
+    height: 100dvh;
+    width: clamp(20rem, 75rem, 100dvw);
+    @include gridCenter;
+    @include mInline;
+    grid-template-rows: 5rem 1fr 5rem;
+    @include FormGradient;
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+}
