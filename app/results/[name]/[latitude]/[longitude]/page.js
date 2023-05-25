@@ -6,9 +6,9 @@ import { useParams } from "next/navigation"
 import { Suspense } from "react"
 
 //fonts
-import { Playfair_Display, Lora } from "next/font/google"
-const playFairDisplay = Playfair_Display({weight: "400", subsets: ["latin"]})
+import { Lora, Raleway } from "next/font/google"
 const lora = Lora({weight: "400", subsets:["latin"]})
+const raleway = Raleway({weight: "100", subsets:["latin"]})
 
 //styles
 import styles from "app/styles/min/Result.module.css"
@@ -34,9 +34,11 @@ const Result = async() => {
                 <Suspense fallback={"Loading..."}><Current currentData={myData.current_weather}/></Suspense>
             </div>
             <div className={styles.hourlyContainer}>
-                <Suspense fallback={"Loading..."}><Hourly myData={myData} /></Suspense>
+                <div className={styles.scrollMe}><span>«</span>&nbsp;<span className={raleway.className}>scroll</span>&nbsp;<span>»</span></div>
+               <div><Suspense fallback={"Loading..."}><Hourly myData={myData} /></Suspense></div> 
             </div>
             <div className={styles.dailyContainer}>
+                <div className={styles.scrollMe}><span>«</span>&nbsp;<span className={raleway.className}>scroll</span>&nbsp;<span>»</span></div>
                 <Suspense fallback={"Loading..."}><Daily myData={myData} /></Suspense>
             </div>
         </div>

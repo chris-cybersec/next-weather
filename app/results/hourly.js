@@ -1,3 +1,8 @@
+//fonts
+import { Raleway, Playfair_Display } from "next/font/google"
+const raleway = Raleway({weight: "100", subsets:["latin"]})
+const playFairDisplay = Playfair_Display({weight: "400", subsets:["latin"]})
+
 //styles
 import styles from "app/styles/min/Result.module.css"
 
@@ -10,7 +15,7 @@ const Hourly = ({myData}) => {
         // console.log(item)
         return(
             <div key={index} className={styles.timeHourly}>
-               <div className={styles.test}>{item.slice(-5)}</div>
+               <div className={styles.test}><span className={raleway.className}>{item.slice(-5)}</span></div>
             </div>
         )
     })
@@ -28,7 +33,7 @@ const Hourly = ({myData}) => {
         // console.log(item)
         return(
             <div key={index} className={styles.timeHourly}>
-               <div className={styles.test}><span>{`${item}°C`}</span></div>
+               <div className={styles.test}><span className={playFairDisplay.className}>{`${item}°C`}</span></div>
             </div>
         )
     })
