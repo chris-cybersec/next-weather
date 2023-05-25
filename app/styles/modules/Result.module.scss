@@ -1,0 +1,63 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+@use '_Gradients.module.scss' as *;
+
+.container{
+    width: 20rem;
+    @include radius5;
+    @include flexColumn;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+    color: $font-clr1;
+    outline: 1px solid currentColor;
+    .title{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+//===============================current
+.current{
+    width: 20rem;
+    height: 10rem;
+ 
+    .content{
+        @include gridCenter;
+        grid-template-columns: 1fr 8rem;
+        .icon{
+            @include borderRed;
+        }
+        .temp{
+            font-size: 2.2rem;
+        }
+    }
+}
+
+
+//================================hourly
+.hourlyContainer{
+    overflow-x: scroll;
+}
+.hourly{
+    @include flexRow;
+    width: 20rem;
+    // background-color: $clr2;
+}
+.timeHourly{
+    text-align: center;
+    background-color: $clr3;
+    margin-inline-end: .5rem;
+    @include radius2;
+    border-bottom: 1px solid $clr4;
+    .test{
+        @include flexColumn;
+        width: 5rem;
+        margin-block: .5rem;
+
+    }
+}
+
+//=================================daily

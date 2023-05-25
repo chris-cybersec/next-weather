@@ -1,6 +1,9 @@
+import { Suspense } from "react"
+
 //styles
 import styles from "app/styles/min/Home.module.css"
-import { Suspense } from "react"
+
+//components
 import FormInput from "app/components/forminput"
 
 export default function Home() {

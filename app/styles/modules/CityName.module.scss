@@ -1,0 +1,23 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+@use '_Gradients.module.scss' as *;
+
+.container{
+    margin-block-end: 1rem;
+        @include flexRow;
+        padding: .5rem 1rem;
+        @include radius2;
+        border: 1px solid currentColor;
+        @include transition1;
+        &:hover{
+            color: $clr-hover-alt;
+        }
+    .content{
+        @include flexRow;
+        p{
+            &:nth-of-type(1){
+                margin-inline-end: 1rem;
+            }
+        }
+    }
+}

@@ -47,5 +47,9 @@
 }
 
 @mixin transition1{
-    transition: background-color 500ms ease 100ms;
+    transition: all 200ms ease 100ms;
+    -webkit-transition: all 200ms ease 100ms;
+    -moz-transition: all 200ms ease 100ms;
+    -ms-transition: all 200ms ease 100ms;
+    -o-transition: all 200ms ease 100ms;
 }
