@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 //fonts
 import { Raleway, Playfair_Display } from "next/font/google"
 const raleway = Raleway({weight:"100", subsets:["latin"]})
@@ -20,7 +22,9 @@ const Daily = ({myData}) => {
     const dailyCode = myData.daily.weathercode.map((item, index) => {
         return(
             <div className={styles.timeDaily} key={index}>
-                <div className={styles.test}>{item}</div>
+                <div className={styles.code}>
+                <Image src={`http://localhost:1122/icons/${item}_isday_1.svg`} width={50} height={50} alt="icon"/>
+                </div>
             </div>
         )
     })

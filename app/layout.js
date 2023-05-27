@@ -4,7 +4,7 @@ import './globals.css'
 import styles from "app/styles/min/Root.module.css"
 
 //components
-import Header from 'app/components/header'
+import HeaderTop from 'app/components/header'
 import Footer from 'app/components/footer'
 
 export const metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className={styles.container}>
-          <header><Header /></header>
+          <header><HeaderTop /></header>
           <main>{children}</main>
           <footer><Footer /></footer>
         </div>

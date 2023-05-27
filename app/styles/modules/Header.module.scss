@@ -1,0 +1,27 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+@use '_Gradients.module.scss' as *;
+
+.container{
+    align-items: center;
+    background-color: $clr1;
+    padding-block: 1rem;
+    .header{
+        @include flexRow;
+        justify-content: space-around;
+        margin-block-end: 2rem;
+    }
+    .logo{
+        a{
+            color: $font-clr1;
+            font-size: 1rem;
+        }
+    }
+    .title{
+        color: $clr-alt;
+    }
+    .description{
+        text-align: center;
+        color: $font-clr1;
+    }
+}

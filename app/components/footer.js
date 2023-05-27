@@ -1,6 +1,7 @@
+import Link from "next/link"
+
 //styles
 import styles from "app/styles/min/Footer.module.css"
-import Link from "next/link"
 
 const Footer = () => {
     return (

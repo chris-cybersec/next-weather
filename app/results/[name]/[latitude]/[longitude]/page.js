@@ -44,8 +44,5 @@ const Result = async() => {
         </div>
     )
 }
-{/* latitude: {latitude}
-<p>longitude: {longitude}</p>
-<p>{name}</p> */}
 
 export default Result

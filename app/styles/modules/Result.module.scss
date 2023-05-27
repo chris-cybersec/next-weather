@@ -30,10 +30,15 @@
         @include gridCenter;
         grid-template-columns: 1fr 8rem;
         .icon{
-            @include borderRed;
+            @include gridCenter;
+            height: 10rem;
+            width: 100%;
+            
         }
         .temp{
+            @include gridCenter;
             font-size: 2.2rem;
+            translate: -1rem 0;
         }
     }
 }
@@ -62,20 +67,16 @@
     .test{
         width: 9rem;
     }
+    .code{
+        width: 9rem;
+        text-align: center;
+    }
     .temp{
         width: 9rem;
         text-align: center;
     }
 }
 
-
-// .minTemp{
-//     @include result2;
-//     span{
-//         translate: -1rem 0;
-//         color: red;
-//     }
-// }
 .minTemp{
     span{
         @include result2;
@@ -85,7 +86,7 @@
 .maxTemp{
     span{
         @include result2;
-        color: rgb(190, 19, 202);
+        color: rgb(253, 55, 55);
     }
 }
 
