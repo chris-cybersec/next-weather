@@ -1,0 +1,11 @@
+node_modules
+
+.vscode
+.next
+.swc
+.gitignore
+.git
+README.md
+sass.txt
+
+Dockerfile.prod

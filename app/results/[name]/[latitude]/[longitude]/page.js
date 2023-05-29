@@ -33,10 +33,10 @@ const Result = async() => {
             <div className={styles.currentContainer}>
                 <Suspense fallback={"Loading..."}><Current currentData={myData.current_weather}/></Suspense>
             </div>
-            <div className={styles.hourlyContainer}>
+            {/* <div className={styles.hourlyContainer}>
                 <div className={styles.scrollMe}><span>«</span>&nbsp;<span className={raleway.className}>scroll</span>&nbsp;<span>»</span></div>
                <div><Suspense fallback={"Loading..."}><Hourly myData={myData} /></Suspense></div> 
-            </div>
+            </div> */}
             <div className={styles.dailyContainer}>
                 <div className={styles.scrollMe}><span>«</span>&nbsp;<span className={raleway.className}>scroll</span>&nbsp;<span>»</span></div>
                 <Suspense fallback={"Loading..."}><Daily myData={myData} /></Suspense>
