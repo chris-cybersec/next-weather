@@ -27,7 +27,7 @@ const Hourly = ({myData}) => {
         return(
             <div key={index} className={styles.timeHourly}>
                {/* <div className={styles.test}>{item}</div> */}
-               <div className={styles.test}>
+               <div className={styles.code}>
                 <Image src={`http://localhost:1122/icons/${item}_isday_1.svg`} width={50} height={50} alt="icon"/>
                 </div>
             </div>

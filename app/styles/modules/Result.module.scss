@@ -53,6 +53,9 @@
 }
 .timeHourly{
     @include result3;
+    .code{
+        width: 5rem;
+    }
 }
 
 //=================================daily
