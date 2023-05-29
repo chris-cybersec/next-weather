@@ -25,7 +25,7 @@ RUN npm install -g pnpm
 
 ENV NODE_ENV=production
 
-RUN addgroup -g 1001 -S nextjs
+RUN addgroup -g 1001 -S node
 RUN adduser -S nextjs -u 1001
 
 COPY --from=builder /meteoApp/next.config.js ./
